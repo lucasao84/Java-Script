@@ -1,0 +1,31 @@
+function startCounter() {
+    var inicio = document.querySelector('input#texnu').value;
+    var fim = document.querySelector('input#texnum').value;
+    var passo = document.querySelector('input#texnums').value;
+    var res = document.querySelector('div#tex0');
+  
+    var i = Number(inicio);
+    var f = Number(fim);
+    var p = Number(passo);
+   
+if ( i == 0 || f == 0 || p == 0){
+    alert('[ERRO] verifique se voce prencheu todas as informações')
+} else {
+
+    res.innerHTML = "";     
+        // contagem crescente
+    if(i < f){for (var c = i; c <= f; c += p) {
+      res.innerHTML += c + " ";   
+    } 
+  
+     // contagem descrecente
+    } else {
+        for(var c = i; c >= f ;c -= p){
+            res.innerHTML += c + " "
+        }
+    }
+    res.innerHTML += `\u{1F92F}`
+  }
+
+}
+  

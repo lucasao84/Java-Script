@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+                 //vetor
+        var a = [8 , 4, 9 , 3] //elementos
+
+        var po = a.indexOf(4)
+
+        
+
+        if( po == -1){
+          console.log(' o valor nao encontrado no vetor')
+        } else {`elemento esta na posição ${po}`}
+      
+      
+        /* a[4] = 'test'
+        a[0] = 'lucas' 
+        a.push(7, 'lucas', 5 , 9 )
+        //a.length
+        a.sort()
+*/
+        //console.log(`nosso vetor é ${a} e tem ${a.length} posiçoes`)
+       // console.log(a)
+      console.log(a)
+
+      /* for( var valor=0;valor < a.length;valor++){
+        console.log(`a posição ${valor} recebe ${a[valor]}`)
+      }*/
+
+      for(var valor in a){
+        console.log(`a posição  ${valor} recebe ${a[valor]}  `)}
+
+
+       /* var name = prompt("Qual e o seu nome ?")
+        document.write(`<p>Seja bem vindo ${name.toUpperCase()} o seu nome tem <strong>${name.length} letras</strong></br>
+        e esse elemento tem ${a.length} posições</p> `)*/
+    </script>
+</body>
+</html>

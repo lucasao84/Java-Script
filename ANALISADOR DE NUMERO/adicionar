@@ -1,0 +1,58 @@
+let num = document.querySelector('input#flist')
+let lista = document.querySelector('select#ss')
+let res = document.querySelector('div#res')
+let vetores = []
+
+function isnumero(n){
+if(Number(n) >= 1 && Number(n) <= 100) {
+    return true
+} else { return false}
+}
+
+function inlista(n, l){
+if(l.indexOf(Number(n)) != -1 ){
+    return true
+} else { 
+    return false
+}
+
+}
+
+function adicionar (){
+ if ( isnumero(num.value) && !inlista(num.value, vetores)){
+vetores.push(Number(num.value))
+let item = document.createElement('option')
+item.text = ` vale ${num.value} foi adicionado`
+lista.appendChild(item)
+ } else { alert('Valor invalido ou ja usado')}
+num.value = ''
+num.focus()
+}
+
+
+function finalizar(){
+    if(vetores == 0){
+        alert('Por favor adicione um numero!')
+    } else { 
+        let total = vetores.length
+        let maior = vetores[0]
+        let menor = vetores[0]
+        let soma = 0
+        let media = 0
+    for(let pos in vetores){
+        soma += vetores[pos]
+        if(vetores[pos] > maior){
+            maior = vetores[pos]
+        } if (vetores[pos] < menor){
+            menor = vetores[pos]
+        }}
+
+        media = soma / total
+        res.innerHTML = ''
+        res.innerHTML += `<p>Ao todo temos ${total} numeros cadastrados</p>`
+        res.innerHTML += `<p> o menor numero é ${menor}</p>`
+        res.innerHTML += ` <p>e o maior numero é ${maior}</p>`
+        res.innerHTML += `<p>a soma total de todos os numero é de ${soma}</p>`
+        res.innerHTML += `<p>A media dos valores digitados é de ${media}</p>`
+        
+    }}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAISES</title>
+
+    <style>
+
+        body{
+            font: normal 15pt arial;
+            bac
+        }
+    </style>
+</head>
+<body>
+    
+<h1> PAIS </h1>
+
+Digite o seu pais <input type="text" name="text" id="tet" >
+<input type="button" value="PESQUISAR" onclick="descente()">
+<div id="des"></div>
+
+
+
+<script>
+     
+    var cor = document.body
+    cor.style.backgroundColor = 'green'
+
+
+    function descente(){
+    var text = document.querySelector('input#tet')
+    var id = document.querySelector('div#des')
+   // var res = 'brasileiro'
+    var min = String(tet.value)
+    
+   
+    
+    //id.innerHTML = `voce é ${res}`
+
+    if( min == 'brasil') {
+ 
+    id.innerHTML = `voce e brasileiro` } else if ( min == 'americano') {
+
+        id.innerHTML = `<p>voce é estrageiro</p>`
+        id.innerHTML += `<p>compre aqui sua passagem na <strong>ELCATUR</strong></p>`
+    } else {
+        id.innerHTML = 'Você  é estrangerio'
+    }
+
+    id.style.color = 'black'
+   
+
+    } 
+
+    
+   
+   
+    
+</script>
+
+</body>
+</html>

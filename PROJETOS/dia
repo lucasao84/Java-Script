@@ -1,0 +1,10 @@
+var foto2 = "foto2.png"
+var foto1 = "foto1.png"
+
+function Trocar(){
+
+
+document.getElementById('foto').src = foto2
+let foto0 = foto2
+foto2 = foto1
+foto1 = foto0 }

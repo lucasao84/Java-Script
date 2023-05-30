@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body .div {
+            font: normal 20 pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h2>SISTEMA DE VOTOS</h2>
+    QUAL E SUA IDADE <input type="text" id="cc">
+    <input type="button" value="enter" onclick="valuer()">
+    <div id="as"></div>
+    <p id="hr"></p>
+    <p id="hrs"></p>
+
+    <h2>
+      SISTEMAS DE DADOS </h2>
+      DIGITE SEU PAIS <input type="text" name="bb" id="vv">
+      <input type="button" value="enter" onclick="pesquisar()">
+       <div id="aa"></div>
+    
+    
+
+
+
+
+    <script>
+    function valuer(){
+    var p1 = document.querySelector('input#cc')
+    var p2 = document.querySelector('div#as')
+    var p3 = Number(p1. value)
+
+
+
+    
+     if (p3 >= 65 || p3 < 18 ) {
+        p2.innerHTML = '<p>voto nao obrigatorio</p>'
+     } else if (p3 => 18){
+        p2.innerHTML = '<p>voto obrigatorio</p>'}
+     
+
+     }
+
+    var agora = new Date()
+    var hora = agora.getHours()
+    var p4 = document.querySelector('p#hr')
+    var p5 = document.querySelector('p#hrs')
+
+    p4.innerHTML = `<p>Agoras são ${hora} horas</p>`
+    console.log(`agora sao ${hora} horas`)
+
+     if(hora > 13){ 
+        p5.innerHTML = `BOA TARDE`
+     } else if ( hora < 12 ){
+        p5.innerHTML = 'Bom dia'
+     } else if (hora > 18) {
+        p5.innerHTML = 'Boa noite'
+     } 
+
+      function pesquisar(){ 
+      var tex2 = document.querySelector('input#vv')
+      var p = document.querySelector('div#aa')
+      var tex2Div = String(tex2. value)
+     
+      switch(tex2Div){
+      
+      case 'Brasil':
+      p.innerHTML = '<p> voce é <strong>BRASILEIRO</strong></p>'
+      break
+      case 'brasil':
+      p.innerHTML = '<p> voce é <strong>BRASILEIRO</strong></P>'
+      break
+      case 'BRASIL':
+      p.innerHTML = '<p> voce é <strong>BRASILEIRO</strong></p>'
+      break
+
+      default:
+         p.innerHTML = '<p> voce é <strong>ESTRANGEIRO</strong></p>'
+   }
+      
+      }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando</title>
+</head>
+<body>
+    
+<h2>TESTANDO SEUS CONHECIMENTO</h2>
+
+Qual e o seu nome <input type="text" id="msn">
+<input type="button" value="ENTER" onclick="calcular()">
+<div id="s"></div>
+
+
+
+
+
+
+
+
+<script>
+   
+
+    function calcular() {
+
+    var n1 = document.querySelector('input#msn')
+    var p2 = document.querySelector('div#s')
+    var n1P2 = String(n1. value)
+    
+    p2.innerHTML = `<p>Seja bem vindo <strong>${n1P2}</strong></p>`
+    p2.style.color = 'blue'
+}
+    
+
+</script>
+
+
+</body>
+</html>

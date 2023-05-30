@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inciando estudos com DOM</title>
+
+    <style>
+        body{
+
+            background: black;
+            color: aliceblue;
+            font: normal 20pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Primeiro estudo com DOM</h1>
+    <p id= "open"> aqui vai o resultado</p>
+    <p> Aprendendo <strong>DOM</strong> em java script</p>
+    <div id= "msg"> clique em min</div>]
+    <h2>
+     <ul>
+        <li>
+            opçoes
+        </li>
+        <li>
+            test
+        </li>
+        <li>
+            outro 
+        </li>
+     </ul>
+        
+    </h2>
+</body>
+
+<script>
+    var corpo = document.body
+    corpo.style.background = 'orange'
+    var p1 = document.getElementsByTagName('p')[0]
+    document.write('e so um test: ' + p1.innerText)
+    p1.style.color = 'black'
+    var cor = document.getElementById('open')
+    cor.style.background = 'blue'
+    var i = document.getElementById('msg')
+    i.style.background = 'green'
+    i.innerText = 'voce estar aprendendo mesmo'
+    var te = document.getElementsByTagName('li')[0]
+    te.style.background = 'black'
+    te = document.getElementsByTagName('li')[1]
+    te.style.background = 'green'
+</script>
+</html>

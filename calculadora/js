@@ -1,0 +1,37 @@
+function soma(a,b){
+    return a + b
+
+
+}
+
+function mult(a,b){
+    return a * b
+}
+
+
+
+function calcular(){
+var n1 = document.querySelector('input#cal').value
+var n2 = document.querySelector('input#op').value
+var n3 = document.querySelector('input#cal1').value
+
+var res = Number(n1)
+
+var re = document.querySelector('div#res')
+ 
+if( n2 == '+') {
+var resultado = soma(Number(n1),Number(n3))
+
+} else if(n2 == '*'){
+    resultado = mult(Number(n1),Number(n3))
+      
+} else { alert('[ERRO] operdor nao existente') }
+
+
+re.innerHTML = `O resultado é ${resultado} \u{1F448}` 
+
+ } 
+
+ 
+
+  

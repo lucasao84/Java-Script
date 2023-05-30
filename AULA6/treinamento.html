@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TreinamentoOo</title>
+
+    <style>
+     body {
+
+        background-color: steelblue;
+        font: normal 18pt arial;
+         }
+    
+    </style>
+</head>
+<body>
+
+    <h1> TREINAMENTO NO JS SCRIPT</h1>
+    <p> bora testa o seu conhecimento</p>
+    <p>mude a cor para laranja</p>
+    <p>mude a cor para azul</p>
+
+    <ul>
+        <li>
+            <button>incio</button>
+        </li>
+        <li>
+            <button>
+                ajuda
+            </button>
+        </li>
+        <li>
+            <button>
+                configuraçoes
+            </button>
+        </li>
+    </ul>
+
+ <h2 id='n' class='pow'> Ola tudo bem</h2>
+    <script>
+
+    function soma(a, b) {
+
+        return a + b
+    }
+
+
+
+     var name = prompt("Qual e o seu nome ?")
+     alert(`Seja bem vindo ${name.toLocaleUpperCase()}`)
+     alert("Vamos agora testa seu conhecimento em Js")
+
+     var n1 = Number(prompt("Digite o primeiro numero"))
+     var op = prompt("digite agora o operador de soma")
+     var n2 = Number(prompt("Digite agora o segundo numero para soma total"))
+
+     var result
+
+     if (op == "+"){
+        result = soma(n1,n2)
+     }
+
+     alert(` o valor da soma total e de ${result}`)
+
+     var salario = Number(prompt("Digite aggora o valor do salario prentecial"))
+     var salario1 = salario.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})
+
+
+     var ol = document.getElementsByTagName('h1')[0]
+     ol.style.background = 'green'
+      
+     var cor = document.getElementsByTagName('p')[1]
+     cor.style.background = 'orange'
+
+     cor = document.getElementsByTagName('p')[2]
+     cor.style.background = 'blue' 
+
+     document.write(`parabens ${name.toLocaleUpperCase()} por voce ter chegado </br>
+     ate aqui eu quero te da os mil parabens estou muito feliz por ter chegado ate aqui</br>
+     continue sempre assim 
+     </br>`)
+     
+     
+     document.write(`o resultado da soma total e de ${result}</br>`)
+     document.write(`salario prentecial e de ${salario1} Dolares`)
+
+     ol.innerText = 'MANIPULANDO DOM'
+     cor.innerText = ' olha com eu estou aprendendo DOM hihi'
+
+     var n = document.querySelector('h2.pow')
+     n.style.background = 'green'
+     n.style.color = 'black'
+     n.innerText = 'Mais um test feito com sucesso'
+
+
+     
+    </script>
+</body>
+</html>

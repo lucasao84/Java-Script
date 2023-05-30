@@ -1,0 +1,31 @@
+    function carregar(){
+    var msg = document.querySelector('div#msg1') 
+    var img = document.querySelector('img#img1')
+    var hora = new Date();
+    var cor = document.body
+
+    agora = 19
+
+msg.innerHTML = `<P>Agora são ${agora} Horas </p> `
+
+if(agora >= 0 && agora < 12){
+
+    img.src = 'foto1.png'
+    //msg.innerHTML = 'BOM DIA'
+
+} else if ( agora >= 12 && agora < 18){
+   // msg.innerHTML = 'BOA TARDE'
+    img.src = 'foto2.png'
+    cor.style.background = 'orange'
+} else { //msg.innerHTML = 'BOA NOITE'
+img.src = 'foto3.png'
+cor.style.background = '#6954e'}
+
+
+
+
+
+
+}
+
+

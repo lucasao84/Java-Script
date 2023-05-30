@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-portugues">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TREINAMENTO PESSOAL</title>
+</head>
+<body>
+    
+    <h1> COMEÇANDO UM NOVO TRABALHO </h1>
+
+    <P> VAMOS PRATICA AGORA CRIANDO ALGUMAS FUNÇOES</P>
+
+    <h1>SISTEMA DE INDENTIFICAÇÃO</h1>
+
+    NOME DO SEU PAIS O IDIOMA FLUENTE <input type="text" name="textv" id="in">
+    <input type="button" value="PROCURAR" onclick="identidade()">
+     
+    <div id="p"></div>
+
+    <h2> LISTA DE DADOS </h2>
+    
+    Digite seu nome <input type="text" name="nn" id="ne"> 
+    <input type="button" value="ENTER" onclick="calcular()">
+    <div id="p1"></div>
+
+    <h2> SALARIO PRENTECIAL</h2>
+
+    Digite seu salario PRENTECIAL <input type="text" id="lu">
+    <input type="button" value="busca" onclick="calcula()">
+    <div id="ms"></div>
+
+
+    <script>
+
+     var nome = prompt("Digite seu nome")
+     alert(`Seja Bem vindo ${nome.toLocaleUpperCase()}`)
+  
+
+    function identidade(){ 
+    var texto = document.querySelector('input#in')
+    var p = document.querySelector('div#p')
+    var loc = String(texto.value)
+     
+    if(loc == 'brasil'){
+    p.innerHTML = 'VOCE É BRASILEIRO'
+
+    } else {
+        p.innerHTML = 'Voce é estrangeiro'
+    }
+ 
+    }  
+
+    function calcular(){
+
+    var texTo1 = document.querySelector('input#ne')
+    var pe = document.querySelector('div#p1')
+    var res = String(texTo1.value)
+
+    pe.innerHTML = `<p> Seja bem vindo(a) <strong>${res.toLocaleUpperCase()}</strong> </p>` }
+
+   /* if (resul == 'lucas') {
+        p1.innerHTML = `SEJA BEM VINDO`
+    } else {p1.innerHTML = `SEJA BEM VINDO`
+    */
+
+    function calcula(){
+
+        var tex = document.querySelector('input#lu')
+        var p2 = document.querySelector('div#ms')
+        var texP2 = Number(tex. value)
+        var texRe = texP2.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+        
+        p2.innerHTML = `<p>SALARIO PRENTENCIAL É DE ${texRe} Reais </p>`
+
+
+        if(texP2 < 1600) {
+            p2.innerHTML = "VOCE ESTAR CONTRATADO ENTRAREMOS EM CONTATO AGUARDE..."
+        } else {p2. innerHTML = "NO MONENTO NAO TEMOS VAGA PARA ESSE SALARIO PRENTENCIAL"}
+    }
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+var num = document.querySelector('input#texto')
+var valor = document.querySelector('select#flista')
+var res = document.querySelector('div#msg')
+var vetor = []
+
+
+
+
+function inLista(n, l){
+    if(l.indexOf(Number(n) != -1)){ return true
+        
+    } else { return false}
+}
+
+function adicionar (){
+    if (insNumero(num.value) && !inLista(num.value, vetor)){
+        alert('Tudo ok!')
+    }   
+}
+
+
+function insNumero(n){
+    if (Number(n) >= 1 && Number(n) <= 100){
+        return true
+    } 
+}
+
+

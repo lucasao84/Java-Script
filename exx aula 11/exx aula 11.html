@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Sistemas de dados</h1>
+    Digite seu nome <input type="text" name="txvvel" id="vel"> 
+   <input type="button" value="Analisar" onclick="calcular()">
+   <div id='res'> </div>
+   <div id='net'></div>
+
+   <script>
+
+    function calcular(){
+        var net = document.querySelector('div#net')
+        var vel = document.querySelector('input#vel')
+        var res = document.querySelector('div#res')
+        var ver = String(vel.value)
+        res.innerHTML = `<p>O Seja bem vindo <strong>${ver} </strong></p>`
+        res.innerHTML += '<p>dirige sempre com sinto de segurança<p>' 
+    
+
+
+   // if (ver > 60) {
+      //  res.innerHTML += '<p>voce utrappasou a velocidade <strong> MUTADO </strong> </p>'} else if (ver < 60) {
+          //  net.innerHTML += ' <p> voce respeitou o limite de velocidade </p>'
+     //   }
+     } 
+    
+ 
+   </script>
+</body>
+</html>

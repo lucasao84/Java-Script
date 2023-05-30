@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tREINAMENTO</title>
+
+    <style>
+        body
+        {background-color: cornflowerblue;
+        color: snow;
+        font:900;
+        font-size: 40px;
+         }
+
+      
+        
+        
+    </style>
+</head>
+<body>
+    
+
+
+
+    <script>
+
+function soma (a, b){
+    return a + b
+}
+
+
+
+var nome = prompt("Qual e o seu nome ?")
+alert(`Seja bem vindo ${nome.toLocaleUpperCase()} e Parabéns por ter criado seu primeiro programa`)
+confirm("Vamos agora testa seu conhecimento em Js ok ?")
+alert("Vamos começar agora fazendo duas somas de dois numeros")
+
+var n1 = Number(prompt("Digite algum numero para soma"))
+var op = prompt("Digite agora o operador de soma")
+var n2 = Number(prompt("Digite agora o segundo numero para qual voce vai ser somado"))
+
+var valor = 1234.56
+var valorBr = valor.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+
+var result
+
+if ( op == "+"){
+result = soma(n1,n2)
+}
+
+
+alert(`o resultado da sua soma é ${result}`)
+
+document.write(`Muito bom senhor ${nome.toLocaleUpperCase()} seu nome contém ${nome.length} letras.</br>
+Voce estar de parabéns por ter conseguido chegar ate aqui </br>
+usando apenas o seu conhecimento como simples programa criado </br>
+por voce estou muito feliz. </br> 
+garanto que se voce continua assim voce ira se torna <br>
+um otimo programador, o mercado da TI estar precisando muito de pessoas<br>
+com conhecimento.</br>`)
+
+document.write(`O resultado da soma de sua conta é ${result}</br>`)
+document.write(`e o valor de salario prentecial e de ${valorBr} reais`)
+
+
+    </script>
+</body>
+</html>

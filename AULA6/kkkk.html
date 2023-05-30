@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body {
+        background-color: steelblue;
+        color: beige;
+
+        }
+    </style>
+</head>
+<body>
+    
+
+
+    <script>
+
+     function soma (a, b) {
+
+        return a + b
+     }
+
+     var nome = prompt("Qual e o seu nome?")
+     alert(`Seja bem vino ${nome.toLocaleUpperCase()}`)
+     alert("Agora vamos praticar um pouco do seu conhecimento")
+     confirm("vamos agora fazer duas somas de dois numeros")
+
+     var n1 = Number(prompt("Digite o primeiro o numero"))
+    var op = prompt("Digite operador de soma")
+    var n2 = Number(prompt("Digite agora o segundo numero para a soma"))
+
+    var valor = 1345.67
+    var valorBb = valor.toLocaleString('pt- BR', {style: 'currency', currency: 'BRL'})
+    
+
+    var resultado
+
+    if (op == "+") {
+
+        resultado = soma(n1, n2)
+    }
+
+    alert(`O valor da soma é ${resultado}`)
+
+   
+
+   document.write(` salario prentecial e de ${valorBb}`)
+
+    </script>
+</body>
+</html>

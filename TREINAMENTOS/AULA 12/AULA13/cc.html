@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tREINANDO</title>
+</head>
+<body>
+    
+    <h1>SISTEMA DE VOTOS</h1>
+
+ DIGITE A SUA IDADE <input type="number" name="vv" id="cc">
+<input type="button" value="enter" onclick="calcular()">
+<div id="oo"></div>
+
+<h1>SISTEMA DE DADOS</h1>
+
+DIGITE SEU PAIS <input type="text" name="te" id="xx">
+<input type="button" value="pesquisar" onclick="pesquisar()">
+<div id="xt"></div>
+
+<h1>SISTEMA DE GANHOS</h1>
+
+DIGITE SEU SALARIO PRENTENCIAL <input type="text" name="bh" id="vc">
+<input type="button" value="enter" onclick="ganho()">
+<div id="oi"></div>
+
+
+    <script>
+     
+     function calcular(){
+     var top1 = document.querySelector("input#cc")
+     var top2 = document.querySelector('div#oo')
+     var top3 = Number(top1.value)
+
+     if(top3 >= 65 || top3 < 18){
+
+        top2.innerHTML = '<p>voto <strong> nao obrigatorio </strong><p/>'
+     } else if (top3 >=  18){
+        top2.innerHTML = '<p>voto <strong>obrigatorio<strong/></p>'
+     } }
+     
+
+     function pesquisar(){
+
+     var p1 = document.querySelector('input#xx')
+     var p2 = document.querySelector('div#xt')
+     var p3 = String(p1.value)
+
+  
+
+     /*if ( p3 == 'Brasil'){
+        p2.innerHTML = '<p>voce é <strong>brasileiro</strong></p>'
+     } else {p2.innerHTML = '<p> voce e <strong>estrangeiro</strong><p/>'}}*/
+
+      switch (p3) {
+         case 'brasil':
+            p2.innerHTML = '<p>voce e <strong>brasileiro1</strong></p>'
+            break;
+            case 'BRASIL':
+            p2.innerHTML = '<p>voce e <strong>brasiliro2</strong></p>'
+            break;
+            case 'Brasil':
+            p2.innerHTML = '<p> voce e <strong>brasiliero3</strong></p>'
+            break;
+            
+      
+         default:
+            p2.innerHTML = '<p> voce é <strong> estrangeiro </strong><p/>'
+            break;
+      }}
+
+        function ganho(){
+
+        var c1 = document.querySelector('input#vc')
+        var c2 = document.querySelector('div#oi')
+        var c3 = Number(c1. value)
+        c4 = c3.toLocaleString('pt-BR' , {style: 'currency', currency: 'BRL'})
+
+        c2.innerHTML = `<p>seu salario prentencial e de <strong>${c4} Reais</strong></p>`}
+    
+    </script>
+</body>
+</html>
